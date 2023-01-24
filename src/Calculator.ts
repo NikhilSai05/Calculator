@@ -86,7 +86,6 @@ export class Calculator {
     }
   }
 
-
   /**
    * Input a decimal point.
    */
@@ -99,9 +98,7 @@ export class Calculator {
     }
   }
 
-
-  negate(): void
-  {
+  negate(): void {
     if (this.overwrite) {
       this.lcd = '0';
       this.overwrite = false;
