@@ -110,6 +110,7 @@ export class Calculator {
     }
   }
 
+
   /**
    * Input a binary operator. If there is a pending operation whose result has
    * not yet been displayed, update the screen to display that result. For
@@ -190,4 +191,14 @@ export class Calculator {
     this.lcd = '0';
     this.overwrite = true;
   }
-}
+
+  percent(): void 
+  {
+    this.lcd=(parseFloat(this.lcd)/100).toString();
+  }
+
+  square(): void 
+  {
+    this.lcd=(parseFloat(this.lcd)*parseFloat(this.lcd)).toString();
+  }
+} 
